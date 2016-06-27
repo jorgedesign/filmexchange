@@ -1,0 +1,149 @@
+/*!
+ * Start Bootstrap - The Big Picture HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/*body {
+	margin-top: 50px;
+	background: none;
+}*/
+
+/*.full {
+  background: url(http://placehold.it/1920x1080) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+}*/
+
+#home-video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('/img/home-poster.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.logo{
+	height:25px;
+
+}
+
+#home-h1 {
+  color:white;
+  margin-bottom: 20px;
+}
+
+.home-p {
+  color: white;
+}
+
+footer .footertext {
+  text-align: center;
+}
+
+#index-content {
+  margin-top:45vh
+}
+
+.footer-p {
+  color: #808080;
+}
+
+.form-control{
+  max-width:98%;
+}
+
+
+#contact-but {
+  margin-left: -15px;
+}
+
+.jumbotron {
+  background: white;
+  border: 1px solid rgb(200,0,0);
+}
+
+#jumbotron-about {
+  margin-top: 50px;
+}
+
+#home-h1{
+font-family: 'Quatrocentto', serif;
+font-size: 100px;
+padding-bottom:50px;
+-webkit-font-smoothing:antialiased;
+}
+h1{
+  font-family: 'Quatrocentto', serif;
+}
+p{
+  font-family:'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+.home-p{
+ font-family: 'Josefin Sans', sans-serif;
+ font-weight: 500;
+ font-size: 20px;
+-webkit-font-smoothing:antialiased
+}
+
+.jumbotron p{
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+h4{
+font-family: 'Quatrocentto', serif;
+font-size: 23px;
+}
+
+h3 {
+font-family: 'Quatrocentto', serif;
+font-size: 28px;
+}
+
+label, ::-webkit-input-placeholder {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 16px;
+}
+
+.btn{
+font-family: 'Josefin Sans', sans-serif;
+font-size: 20px;
+}
+
+#row-form {
+  margin-top: 50px;
+}
+
+.panel-body {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 17px;
+}
+
+ul {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 17px;
+}
+.footertext {
+width:100%;
+}
+
+.line {
+width: 100%;
+}
