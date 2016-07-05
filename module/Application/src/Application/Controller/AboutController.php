@@ -11,16 +11,32 @@ namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Zend\View\Model\JsonModel;
 
 class AboutController extends AbstractActionController
 {
     public function indexAction() {
     	return new ViewModel();
     }
+
+    public function learnmoreAction() {
+	
+	$services = array (
+            'Filming',
+            'Production',
+            'Motion Graphics',
+            'Color Correction'
+            );
+
+        $data = array(
+            'services' => $services,
+            );
+
+        return new JsonModel($data);
+    }
+
+
 }
-
-
-
 
 
 

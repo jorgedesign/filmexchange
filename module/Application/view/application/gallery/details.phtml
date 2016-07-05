@@ -5,9 +5,11 @@
                 <?php 
                     if(isset($this->id)){
                     $id = $this->id;
+                    if ((is_numeric($id)) && $id<12){
                     // var_dump($this->videos[$id]);
                     echo $this->videos[$id]["title"];
-                   }
+                   }else{echo"<span style='color:#c1272d'>Error. Type a valid id or click on the Next button.</span>";}
+               }
                    // echo "<pre>";     
                    // var_dump($this->id);
                 ?>

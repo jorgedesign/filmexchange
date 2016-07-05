@@ -23,6 +23,20 @@ return array(
                 ),
             ),
 
+
+         // Index JsonModel route - Ajax route
+            'list' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/list',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\About',
+                        'action'     => 'learnmore',
+                    ),
+                ),
+            ),
+
+
             'gallery' => array(
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(
@@ -140,6 +154,11 @@ return array(
         ),
     ),
     'view_manager' => array(
+
+        'strategies' => array(
+            'ViewJsonStrategy'
+        ),
+
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
         'doctype'                  => 'HTML5',

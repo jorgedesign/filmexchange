@@ -1,5 +1,6 @@
 <?php
 date_default_timezone_set('America/Vancouver');
+$current =  basename($this->serverUrl(true));
 ?>
 
 <!DOCTYPE html>
@@ -58,19 +59,19 @@ date_default_timezone_set('America/Vancouver');
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/">Home</a>
+                        <a <?php if($current=="filmexchange.jorged-gonzalez.com") {echo "style='color:white'";} ?> href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/gallery">Gallery</a>
+                        <a <?php if($current=="gallery") {echo "style='color:white'";} ?> href="/gallery">Gallery</a>
                     </li>
                     <li>
-                        <a href="/pricing">Pricing</a>
+                        <a <?php if($current=="pricing") {echo "style='color:white'";} ?> href="/pricing">Pricing</a>
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <a <?php if($current=="about") {echo "style='color:white'";} ?> href="/about">About</a>
                     </li>
                     <li>
-                        <a href="/contact">Contact</a>
+                        <a <?php if($current=="contact") {echo "style='color:white'";} ?> href="/contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -109,6 +110,8 @@ date_default_timezone_set('America/Vancouver');
 
     <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
     async defer></script>
+
+    <script src="/js/learnmore.js"></script>
 
 </body>
 
