@@ -147,3 +147,7 @@ width:100%;
 .line {
 width: 100%;
 }
+
+.selected{
+  color:white;
+}
